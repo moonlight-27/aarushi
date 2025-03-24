@@ -28,7 +28,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               description:
                 "Aarushi is a YouTube creator sharing creative videos and behind-the-scenes content. Her channel is popular for insightful and engaging content.",
               url: metadata.metadataBase.toString(),
-              image: ["https://aarushi-website.com/og-image.jpg"],
+              image: ["https://aarushi-sinha.vercel.app//aarushiog.png"],
               sameAs: [
                 "https://www.youtube.com/@AARUSHI_SINHA",
                 "https://www.instagram.com/arushehh_?igsh=cWhraW52ZGVyN2Jy",
@@ -43,7 +43,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         {/* OpenGraph Image Section */}
         <div className="open-graph-image-container hidden">
           <img
-            src="https://aarushi-website.com/og-image.jpg"
+            src="https://aarushi-sinha.vercel.app/aarushiog.png"
             alt="Aarushi in front of camera creating YouTube content"
             width="1200"
             height="630"

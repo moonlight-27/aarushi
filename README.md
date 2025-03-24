@@ -1,6 +1,6 @@
 # Aarushi Sinha | YouTube Creator & Content Creator
 
-[![Aarushi Screenshot](https://aarushi-website.com/og-image.jpg)](https://aarushi-website.com/)
+[![Aarushi Screenshot](https://aarushi-sinha.vercel.app/aarushiog.png)](https://aarushi-sinha.vercel.app)
 
 **Aarushi Sinha** is a popular YouTube content creator known for her creative and engaging videos. With a passion for storytelling and behind-the-scenes content, Aarushi offers her audience an insightful look into her creative journey. Explore her world of inspiring videos, tutorials, and more!
 
@@ -18,11 +18,11 @@
 
 ## Live Demo
 
-Check out Aarushi's official website: [Aarushi's Website](https://aarushi-website.com).
+Check out Aarushi's official website: [Aarushi's Website](https://aarushi-sinha.vercel.app).
 
 ## Source Code
 
-Explore the code on GitHub: [Aarushi's GitHub](https://github.com/your-username/aarushi-website).
+Explore the code on GitHub: [Aarushi's GitHub](https://github.com/moonlight-27/aarushi).
 
 ---
 
