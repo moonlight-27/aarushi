@@ -17,12 +17,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           property="og:image:alt"
           content={metadata.openGraph.images[0].alt}
         />
-        <meta property="og:url" content={metadata.openGraph.url} />
+        <meta property="og:url" content={metadata.metadataBase.toString()} />{" "}
+        {/* Fixed url */}
         <meta property="og:type" content={metadata.openGraph.type} />
         <meta property="og:site_name" content={metadata.openGraph.siteName} />
         <link rel="icon" href={metadata.icons[0].url} />
         <title>{metadata.title}</title>
-
         {/* Structured Data (JSON-LD for SEO) */}
         <script
           type="application/ld+json"
@@ -34,7 +34,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               description:
                 "Aarushi is a YouTube creator sharing creative videos and behind-the-scenes content. Her channel is popular for insightful and engaging content.",
               url: metadata.metadataBase.toString(),
-              image: ["https://aarushi-sinha.vercel.app/aarushiog.png"],
+              image: [metadata.openGraph.images[0].url],
               sameAs: [
                 "https://www.youtube.com/@AARUSHI_SINHA",
                 "https://www.instagram.com/arushehh_?igsh=cWhraW52ZGVyN2Jy",
@@ -49,7 +49,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         {/* OpenGraph Image Section */}
         <div className="open-graph-image-container hidden">
           <img
-            src="https://aarushi-sinha.vercel.app/aarushiog.png"
+            src={metadata.openGraph.images[0].url}
             alt="Aarushi in front of camera creating YouTube content"
             width="1200"
             height="630"
