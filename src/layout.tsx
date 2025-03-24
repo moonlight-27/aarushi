@@ -13,7 +13,13 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
-        <meta property="og:url" content={metadata.metadataBase.toString()} />
+        <meta
+          property="og:image:alt"
+          content={metadata.openGraph.images[0].alt}
+        />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <meta property="og:type" content={metadata.openGraph.type} />
+        <meta property="og:site_name" content={metadata.openGraph.siteName} />
         <link rel="icon" href={metadata.icons[0].url} />
         <title>{metadata.title}</title>
 
@@ -28,7 +34,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               description:
                 "Aarushi is a YouTube creator sharing creative videos and behind-the-scenes content. Her channel is popular for insightful and engaging content.",
               url: metadata.metadataBase.toString(),
-              image: ["https://aarushi-sinha.vercel.app//aarushiog.png"],
+              image: ["https://aarushi-sinha.vercel.app/aarushiog.png"],
               sameAs: [
                 "https://www.youtube.com/@AARUSHI_SINHA",
                 "https://www.instagram.com/arushehh_?igsh=cWhraW52ZGVyN2Jy",
