@@ -6,6 +6,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
+    url: "https://aarushi-sinha.vercel.app",
     images: [
       {
         url: "https://aarushi-sinha.vercel.app/aarushiog.png", 
@@ -14,7 +15,7 @@ export const metadata = {
         height: 630,
       },
     ],
-    siteName: "Aarushi Sinha",
+    siteName: "Aarushi Sinha", 
   },
   icons: [
     {

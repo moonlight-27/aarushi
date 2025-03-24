@@ -1,8 +1,8 @@
 import React from "react";
-import { Helmet } from "react-helmet"; // Import React Helmet
+import { Helmet } from "react-helmet";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { metadata } from "./metadata"; // Import metadata object from your metadata file
+import { metadata } from "./metadata";
 import "./index.css";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -22,12 +22,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             property="og:image:alt"
             content={metadata.openGraph.images[0].alt}
           />
-          <meta property="og:url" content={metadata.metadataBase.toString()} />{" "}
-          {/* Fixed URL */}
+          {/* OpenGraph Image dimensions */}
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:url" content={metadata.metadataBase.toString()} />
           <meta property="og:type" content={metadata.openGraph.type} />
           <meta property="og:site_name" content={metadata.openGraph.siteName} />
+
           <link rel="icon" href={metadata.icons[0].url} />
           <title>{metadata.title}</title>
+
           {/* Structured Data (JSON-LD for SEO) */}
           <script
             type="application/ld+json"
@@ -52,11 +56,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </head>
       <body className="bg-black text-white">
         <Navbar /> {/* Navbar */}
-        {/* OpenGraph Image Section */}
+        {/* OpenGraph Image Section (Optional, for display purposes) */}
         <div className="open-graph-image-container hidden">
           <img
             src={metadata.openGraph.images[0].url}
-            alt="Aarushi in front of camera creating YouTube content"
+            alt={metadata.openGraph.images[0].alt}
             width="1200"
             height="630"
             className="w-full h-auto"
